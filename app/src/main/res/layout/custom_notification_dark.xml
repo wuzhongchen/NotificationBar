@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_customNotification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#3D6b6a6a">
+
+    <LinearLayout
+        android:id="@+id/icon"
+        android:layout_margin="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/center"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/icon"
+        android:layout_width="200dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:id="@+id/text_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/music_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="160dp"
+                android:textColor="#ffffff"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/notes_img"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_height="0px"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tv_inbox"
+                android:layout_width="25dp"
+                android:padding="6dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backmusic_btn"
+                />
+
+            <ImageView
+                android:id="@+id/tv_addSchedule"
+                android:layout_width="25dp"
+                android:padding="7dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/stopmusic_btn"
+                android:layout_marginLeft="40dp"
+                />
+
+            <ImageView
+                android:id="@+id/tv_note"
+                android:layout_width="25dp"
+                android:padding="6dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nextmusic_btn"
+                android:layout_marginLeft="40dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cancel_notify_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_alignParentRight="true"
+        android:padding="8dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cancel_icon"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
